@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@ConfigurationPropertiesScan
 public class MessageController {
 
-    final
+    private final
     MessageConfig config;
 
     public MessageController(MessageConfig config) {
